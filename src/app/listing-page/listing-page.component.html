@@ -1,1 +1,7 @@
-<p>listing-page works!</p>
+<div>
+    <div class="content-box" *ngFor="let list of listings">
+        <a routerLink="/listings/{{list.id}}">
+            {{list.name}}          -${{list.price}}
+        </a>
+    </div>
+</div>
