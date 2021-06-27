@@ -1,1 +1,11 @@
-<p>listing-deatail works!</p>
+<div class="content-box">
+    <a routerLink="/listings/">
+    <button>Back</button>
+    </a>
+    <h2>{{listings.name}}</h2>
+    <p>{{listings.discription}}</p>
+    <p>${{listings.price}}</p>
+     <a routerLink="/contact/{{listings.id}}">
+        <button>Contact Seller</button>
+     </a>
+</div>
