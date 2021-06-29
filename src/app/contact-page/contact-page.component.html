@@ -1,1 +1,16 @@
-<p>contact-page works!</p>
+<div class="content-box">
+<h3>Contact with the Owner</h3>
+<div>
+    <label>
+        Your Email Adress:
+        <input  name="email" [(ngModel)]="email" />
+    </label>
+</div>
+<div>
+    <label>
+        Message:
+        <textarea name="message" row="3" cols="20"  [(ngModel)]="message"></textarea>
+    </label>
+</div>
+<button (click)="sendmessage()">Send</button>
+</div>
